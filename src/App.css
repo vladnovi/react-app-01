@@ -1,0 +1,26 @@
+.app-wrapper {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "h h"
+    "n c";
+    max-width: 80%;
+    margin: 0 auto;
+}
+.header {
+    grid-area: h;
+    background-color: green;
+}
+.header img {
+    width: 80px;
+}
+.nav {
+    grid-area: n;
+    background-color: green;
+}
+.content {
+    grid-area: c;
+    overflow: hidden;
+}
